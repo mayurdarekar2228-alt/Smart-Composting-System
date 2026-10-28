@@ -1,5 +1,7 @@
 # 🌱 Smart Composting System
 
+**https://mayurdarekar2228-alt.github.io/Smart-Composting-System/**
+
 **Arduino-based monitoring and motor-assisted mixing for a nominal 10 L composting prototype.**
 
 A student engineering project that brings together mechanical design, embedded control and organic-waste management. The system is intended to observe local temperature and moisture conditions and assist mixing through a DC-motor-driven paddle assembly.
