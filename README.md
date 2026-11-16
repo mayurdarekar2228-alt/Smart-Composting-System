@@ -4,7 +4,7 @@
 
 A student mechanical engineering project focused on developing a physical composting system using a 20-litre bucket and a mechanical mixing arrangement. The project demonstrates practical mechanical design, fabrication, assembly and sustainable waste-management concepts.
 
-> **Project status:** The supplied workshop photographs show frame fabrication in progress. CAD illustrations are reference material only; they are not verified as the final 20-litre model. Dimensions, materials, detailed component configuration and composting performance are to be confirmed.
+> **Project status:** The supplied SolidWorks assembly and part files are included as the current CAD reference. They do not confirm that the physical model is complete or matches the CAD. Workshop photographs show frame fabrication in progress. Dimensions, materials, detailed operating method and composting performance are to be confirmed.
 
 [Open the project website](https://mayurdarekar2228-alt.github.io/Smart-Composting-System/) · [View the CAD gallery](#10-cad-design-gallery)
 
@@ -23,7 +23,7 @@ Organic waste can be a useful resource when it is managed and processed appropri
 | Model | Physical composting-system concept |
 | Bucket capacity | 20 litres, as specified by the project team |
 | Mixing | Mechanical mixing arrangement; operating details to be confirmed |
-| Current evidence | CAD illustrations and workshop photographs of frame fabrication in progress |
+| Current evidence | Supplied SolidWorks assembly and component files; workshop photographs of frame fabrication in progress |
 | Dimensions, materials and test results | To be confirmed |
 
 The project name is retained from the team brief; capabilities beyond the documented mechanical scope are not assumed.
@@ -51,7 +51,7 @@ Small compost batches need to be handled in a way that supports practical mixing
 
 ## 6. Physical Model Description
 
-The project brief specifies a physical model using a 20-litre bucket and a mechanical mixing arrangement. The supplied images include CAD illustrations and photographs of metal-frame fabrication in progress. They do not establish that the final model is complete or that the illustrated assemblies match the current build.
+The project brief specifies a physical model using a 20-litre bucket and a mechanical mixing arrangement. The supplied CAD assembly depicts a 20-litre drum or pail supported by a frame, with crank and rotor-hub components. These files document a CAD design; they do not establish that the final model is complete or that it matches the physical build. The supplied workshop photographs show frame fabrication in progress.
 
 The mixing arrangement, mounting, bucket interfaces, operating method and final construction details are **to be confirmed** against the approved design and completed model.
 
@@ -59,52 +59,63 @@ The mixing arrangement, mounting, bucket interfaces, operating method and final 
 
 | Component or feature | Project role | Status |
 |---|---|---|
-| 20-litre bucket | Main container for the composting model | Capacity stated in the project brief; usable volume and material to be confirmed |
-| Mechanical mixing arrangement | Intended to mix or redistribute the contents | Detailed geometry, interfaces and operating method to be confirmed |
-| Frame / support structure | Supports the physical assembly | Workshop photographs show frame fabrication in progress; dimensions and material to be confirmed |
-| Lid and access features | Provide access to the container | Configuration and secure closure to be confirmed |
+| 20-litre drum / pail | Main container in the supplied CAD assembly | Capacity stated in the project brief and part filename; material and usable volume to be confirmed |
+| Stand A-frame and longitudinal braces | CAD support-structure components | Included in the assembly; physical dimensions, material and completion status to be confirmed |
+| Bearing blocks and plain bushes | CAD components at the drum support interfaces | Included in the assembly; fit, material and operating loads to be confirmed |
+| Rotor hub / stubs, crank arm and grip | CAD components associated with the drum's turning arrangement | Included in the assembly; detailed drive path and operating method to be confirmed |
+| Pail end lid and folding lid | CAD closure/access components | Included in the assembly; configuration and secure closure to be confirmed |
 
 No unverified dimensions, materials, loads or component ratings are assumed in this document.
 
 ## 8. Working Principle
 
-Organic material is placed in the bucket. The mechanical mixing arrangement is intended to redistribute the contents when operated. The exact loading procedure, actuation method, turning schedule and safe working capacity have not been documented and are to be confirmed.
+Organic material is intended to be placed in the bucket. The supplied CAD assembly includes a crank arm, crank grip and rotor-hub components, but the exact relationship between these parts and the mixing function, loading procedure, turning schedule and safe working capacity are to be confirmed.
 
 Mixing alone does not establish compost maturity. Feedstock, moisture, aeration, temperature and time affect the process; no performance result is claimed.
 
 ## 9. Mechanical Design and Construction
 
-The design work concerns the bucket, mixing arrangement, frame/support and interfaces between components. The repository includes earlier CAD illustrations; their dimensions and configuration have not been verified against the corrected 20-litre physical model.
+The supplied SolidWorks assembly and part files in [`assets/cad/`](assets/cad/) are the current CAD reference. They show a 20-litre drum or pail, frame/support components, bearing and bush components, crank/rotor components, and lid components. Their dimensions, materials and fit have not been independently verified against the physical model.
 
 Before construction or operation, confirm the approved drawings, component fits, frame stability, moving clearances, fasteners, access closure and safe operating procedure. Record any changes made during fabrication.
 
 ## 10. CAD Design Gallery
 
-The following images are CAD illustrations supplied with the project. They are **not photographs** and do not prove that the depicted details are present in the final physical model. Their relationship to the current 20-litre design is to be confirmed.
+The links below are the supplied native SolidWorks files, not rendered images or photographs. They document the CAD design but do not prove that the physical model is complete or matches the assembly. Keep the assembly and its referenced part files together when opening the assembly.
 
 ### Overall Assembly
 
-![Earlier assembly concept, shown as a CAD illustration; current configuration to be confirmed](assets/images/01_complete_isometric.png)
-
-![Earlier internal arrangement, shown as a CAD illustration; current configuration to be confirmed](assets/images/06_inside_isometric_transparent_bucket.png)
+[Composter_Assembly.SLDASM — download the native assembly](assets/cad/Composter_Assembly.SLDASM)
 
 ### Bucket Design
 
-![Bucket body concept, shown as a CAD illustration; dimensions and configuration to be confirmed](assets/images/10_part_bucket_body_with_partition.png)
+- [Drum_Pail_20L.SLDPRT](assets/cad/Drum_Pail_20L.SLDPRT)
+- [Pail_End_Lid.SLDPRT](assets/cad/Pail_End_Lid.SLDPRT)
+- [Folding_Lid.SLDPRT](assets/cad/Folding_Lid.SLDPRT)
 
-![Bucket top and lid concept, shown as a CAD illustration; configuration to be confirmed](assets/images/05_complete_top_lid.png)
+### Crank and Rotor Components
 
-### Shaft and Paddle Mechanism
+- [Rotor_Hub_Stub.SLDPRT](assets/cad/Rotor_Hub_Stub.SLDPRT)
+- [Crank_Arm.SLDPRT](assets/cad/Crank_Arm.SLDPRT)
+- [Crank_Grip.SLDPRT](assets/cad/Crank_Grip.SLDPRT)
 
-![Shaft and paddle arrangement, shown as a CAD illustration; interfaces to be confirmed](assets/images/13_part_mixer_shaft_paddles_seal_cassette.png)
+### Frame and Support Components
 
-### Mechanical Components
+- [Stand_A_Frame.SLDPRT](assets/cad/Stand_A_Frame.SLDPRT)
+- [Longitudinal_Brace.SLDPRT](assets/cad/Longitudinal_Brace.SLDPRT)
+- [Bearing_Block.SLDPRT](assets/cad/Bearing_Block.SLDPRT)
+- [Plain_Bush.SLDPRT](assets/cad/Plain_Bush.SLDPRT)
 
-![Access lid concept, shown as a CAD illustration; final component details to be confirmed](assets/images/11_part_removable_lid_and_hatch.png)
+### Additional Supplied Parts
+
+The relationship of these standalone files to the supplied assembly has not been confirmed:
+
+- [composter.SLDPRT](assets/cad/composter.SLDPRT)
+- [composter 2.SLDPRT](assets/cad/composter%202.SLDPRT)
 
 ### Final Physical Model
 
-No photograph of the completed final model has been supplied. These workshop photographs show **frame fabrication in progress only**:
+No photograph of the completed physical model has been supplied. These workshop photographs show **frame fabrication in progress only**:
 
 ![Frame fabrication in progress in a workshop](assets/images/frame-fabrication-01.jpeg)
 
@@ -133,13 +144,13 @@ These are educational and design benefits, not measured performance claims.
 
 - Final dimensions, construction materials and usable capacity are to be confirmed.
 - Detailed mixing geometry, mounting and operating method are to be confirmed.
-- The CAD illustrations are not verified as the final 20-litre design.
+- Older CAD illustrations retained in `assets/images/` are not verified against the supplied assembly and are not used in the active gallery.
 - The supplied photographs show fabrication in progress, not the completed model.
 - No composting-time, product-quality, capacity-under-load or performance test results are provided.
 
 ## 15. Future Improvements
 
-- Verify and update the CAD assembly for the physical 20-litre model.
+- Verify the supplied CAD assembly against the completed physical 20-litre model.
 - Record dimensions, materials, component interfaces and assembly sequence.
 - Complete and photograph the physical model, with captions that reflect its actual status.
 - Review stability, clearances, closure and safe operation before use.
@@ -152,7 +163,7 @@ The Smart Composting System is a mechanical-engineering project centered on a ph
 
 ## 17. Acknowledgements
 
-The project team acknowledges the contributors who prepared the project material and shared the CAD illustrations and workshop photographs. Additional acknowledgements are to be confirmed by the team.
+The project team acknowledges the contributors who prepared the SolidWorks files and shared the workshop photographs. Additional acknowledgements are to be confirmed by the team.
 
 ---
 

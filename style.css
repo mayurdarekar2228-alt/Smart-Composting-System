@@ -102,6 +102,17 @@ h1 span, h2 span { color: var(--green); }
 .gallery-grid { display: grid; gap: 16px; }
 .gallery-two { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 .gallery-feature { grid-template-columns: minmax(0, 1.1fr) minmax(240px, .9fr); align-items: stretch; }
+.cad-grid { grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
+.cad-grid-feature { grid-template-columns: minmax(0, 1.1fr) minmax(240px, .9fr); align-items: stretch; }
+.cad-card { display: flex; min-width: 0; flex-direction: column; padding: 21px; border: 1px solid #ffffff1b; background: #0c1624; }
+.cad-card-feature { flex-direction: row; align-items: center; gap: 24px; padding: 25px; }
+.cad-card-mark { display: grid; width: 76px; height: 76px; flex: 0 0 76px; place-items: center; border: 1px solid #f18a3580; color: var(--orange); font-family: var(--serif); font-size: 1.3rem; }
+.cad-file-kind { color: var(--orange); font-size: .56rem; font-weight: 800; letter-spacing: .12em; }
+.cad-card h4 { margin: 11px 0 8px; color: var(--white); font-size: .82rem; overflow-wrap: anywhere; }
+.cad-card p { margin: 0; color: #bdc7d2; font-size: .7rem; line-height: 1.65; }
+.cad-card-content { min-width: 0; }
+.cad-download { display: inline-flex; align-items: center; gap: 9px; margin-top: 17px; color: var(--orange); font-size: .7rem; font-weight: 800; text-decoration: none; }
+.cad-download:hover { color: #ffa457; }
 .gallery-card { min-width: 0; margin: 0; overflow: hidden; border: 1px solid #ffffff1b; background: #0c1624; animation: rise-in .55s ease-out both; }
 .gallery-card img { display: block; width: 100%; max-height: 510px; aspect-ratio: 1.55; object-fit: contain; background: #e6e9eb; transition: transform .45s ease; }
 .gallery-card:hover img { transform: scale(1.025); }
@@ -155,6 +166,7 @@ h1 span, h2 span { color: var(--green); }
   .principle-band { grid-template-columns: repeat(2, 1fr); }
   .principle-title { grid-column: 1 / -1; }
   .gallery-feature { grid-template-columns: 1fr 1fr; }
+  .cad-grid-feature { grid-template-columns: 1fr; }
   .process-layout, .team-layout { gap: 38px; }
 }
 
@@ -182,6 +194,8 @@ h1 span, h2 span { color: var(--green); }
   .gallery-caveat-wide { margin: -4px 0 17px; }
   .gallery-group { margin-top: 42px; }
   .gallery-two, .gallery-feature, .split-sections { grid-template-columns: 1fr; }
+  .cad-grid { grid-template-columns: 1fr; }
+  .cad-card-feature { align-items: flex-start; flex-direction: column; gap: 17px; }
   .gallery-card img { aspect-ratio: 1.15; }
   .gallery-photo img { aspect-ratio: 1.08; }
   .gallery-note { min-height: 100px; }
