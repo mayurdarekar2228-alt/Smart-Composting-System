@@ -4,7 +4,7 @@
 
 A student mechanical engineering project focused on developing a physical composting system using a 20-litre bucket and a mechanical mixing arrangement. The project demonstrates practical mechanical design, fabrication, assembly and sustainable waste-management concepts.
 
-> **Project status:** The supplied SolidWorks assembly and part files are included as the current CAD reference. They do not confirm that the physical model is complete or matches the CAD. Workshop photographs show frame fabrication in progress. Dimensions, materials, detailed operating method and composting performance are to be confirmed.
+> **Project status:** The supplied SolidWorks assembly and part files are included as the current CAD reference. They do not confirm that the physical model is complete or matches the CAD. Photographs document frame fabrication and bucket/shaft assembly in progress. Dimensions, materials, detailed operating method and composting performance are to be confirmed.
 
 [Open the project website](https://mayurdarekar2228-alt.github.io/Smart-Composting-System/) · [View the CAD gallery](#10-cad-design-gallery)
 
@@ -23,7 +23,7 @@ Organic waste can be a useful resource when it is managed and processed appropri
 | Model | Physical composting-system concept |
 | Bucket capacity | 20 litres, as specified by the project team |
 | Mixing | Mechanical mixing arrangement; operating details to be confirmed |
-| Current evidence | Supplied SolidWorks assembly and component files; workshop photographs of frame fabrication in progress |
+| Current evidence | Supplied SolidWorks assembly and component files; photographs of frame fabrication and bucket/shaft assembly in progress |
 | Dimensions, materials and test results | To be confirmed |
 
 The project name is retained from the team brief; capabilities beyond the documented mechanical scope are not assumed.
@@ -51,7 +51,7 @@ Small compost batches need to be handled in a way that supports practical mixing
 
 ## 6. Physical Model Description
 
-The project brief specifies a physical model using a 20-litre bucket and a mechanical mixing arrangement. The supplied CAD assembly depicts a 20-litre drum or pail supported by a frame, with crank and rotor-hub components. These files document a CAD design; they do not establish that the final model is complete or that it matches the physical build. The supplied workshop photographs show frame fabrication in progress.
+The project brief specifies a physical model using a 20-litre bucket and a mechanical mixing arrangement. The supplied CAD assembly depicts a 20-litre drum or pail supported by a frame, with crank and rotor-hub components. These files document a CAD design; they do not establish that the final model is complete or that it matches the physical build. Supplied photographs document frame fabrication and bucket/shaft assembly in progress.
 
 The mixing arrangement, mounting, bucket interfaces, operating method and final construction details are **to be confirmed** against the approved design and completed model.
 
@@ -113,9 +113,11 @@ The relationship of these standalone files to the supplied assembly has not been
 - [composter.SLDPRT](assets/cad/composter.SLDPRT)
 - [composter 2.SLDPRT](assets/cad/composter%202.SLDPRT)
 
-### Final Physical Model
+### Physical Model — Work in Progress
 
-No photograph of the completed physical model has been supplied. These workshop photographs show **frame fabrication in progress only**:
+No photograph of the completed composting system has been supplied. The following photographs document work in progress:
+
+![Bucket and shaft assembly in progress](assets/images/bucket-shaft-assembly-in-progress.jpeg)
 
 ![Frame fabrication in progress in a workshop](assets/images/frame-fabrication-01.jpeg)
 
@@ -123,7 +125,7 @@ No photograph of the completed physical model has been supplied. These workshop 
 
 ## 11. Manufacturing and Assembly
 
-The supplied workshop photographs document metal-frame fabrication in progress. They do not show or confirm completion of the full composting system.
+The supplied photographs document metal-frame fabrication and bucket/shaft assembly in progress. They do not show or confirm completion of the full composting system.
 
 A project-specific manufacturing and assembly record should identify the approved drawings, actual materials, fabrication steps, joining methods, component fit checks and inspection results. Details not documented in the repository are to be confirmed by the team.
 
@@ -145,7 +147,7 @@ These are educational and design benefits, not measured performance claims.
 - Final dimensions, construction materials and usable capacity are to be confirmed.
 - Detailed mixing geometry, mounting and operating method are to be confirmed.
 - Older CAD illustrations retained in `assets/images/` are not verified against the supplied assembly and are not used in the active gallery.
-- The supplied photographs show fabrication in progress, not the completed model.
+- The supplied photographs show fabrication and assembly in progress, not the completed model.
 - No composting-time, product-quality, capacity-under-load or performance test results are provided.
 
 ## 15. Future Improvements
