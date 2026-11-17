@@ -104,7 +104,7 @@ h1 span, h2 span { color: var(--green); }
 .gallery-feature { grid-template-columns: minmax(0, 1.1fr) minmax(240px, .9fr); align-items: stretch; }
 .cad-grid { grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
 .cad-grid-feature { grid-template-columns: minmax(0, 1.1fr) minmax(240px, .9fr); align-items: stretch; }
-.cad-card { display: flex; min-width: 0; flex-direction: column; padding: 21px; border: 1px solid #ffffff1b; background: #0c1624; }
+.cad-card { display: flex; min-width: 0; flex-direction: column; padding: 21px; border: 1px solid #ffffff1b; background: #0c1624; } .cad-part-image { display: block; width: 100%; aspect-ratio: 1.55; margin: 0 0 16px; object-fit: contain; background: #e6e9eb; }
 .cad-card-feature { flex-direction: row; align-items: center; gap: 24px; padding: 25px; }
 .cad-card-mark { display: grid; width: 76px; height: 76px; flex: 0 0 76px; place-items: center; border: 1px solid #f18a3580; color: var(--orange); font-family: var(--serif); font-size: 1.3rem; }
 .cad-file-kind { color: var(--orange); font-size: .56rem; font-weight: 800; letter-spacing: .12em; }
