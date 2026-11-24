@@ -59,7 +59,8 @@ h1 span, h2 span { color: var(--green); }
 .hero-status { display: flex; align-items: center; gap: 9px; margin: 24px 0 0; color: var(--muted); font-size: .69rem; }
 .status-dot { width: 7px; height: 7px; border-radius: 50%; background: var(--green); box-shadow: 0 0 13px #83b98a99; }
 .hero-figure { margin: 0; padding: 11px; border: 1px solid #ffffff24; background: #ffffff08; box-shadow: 0 25px 70px #0005; animation: rise-in .75s .08s ease-out both; }
-.hero-figure img { display: block; width: 100%; aspect-ratio: 1.08; object-fit: cover; object-position: center 54%; }
+.hero-figure img { display: block; width: 100%; aspect-ratio: 1.08; object-fit: contain; object-position: center; background: #edf1f3; }
+.hero-figure .hero-build-photo { aspect-ratio: 3 / 4; object-fit: cover; object-position: center; }
 .hero-figure figcaption { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px; padding: 11px 3px 2px; color: var(--muted); font-size: .58rem; letter-spacing: .08em; }
 .hero-figure figcaption span:first-child { color: var(--orange); font-weight: 800; }
 .hero-specs { display: grid; grid-template-columns: repeat(3, 1fr); margin-top: 56px; border-top: 1px solid #ffffff24; }
@@ -100,11 +101,11 @@ h1 span, h2 span { color: var(--green); }
 .group-heading > span { color: var(--orange); font-size: .62rem; font-weight: 800; letter-spacing: .1em; }
 .group-heading h3 { margin: 0; font-family: var(--serif); font-size: 1.32rem; font-weight: 400; }
 .gallery-grid { display: grid; gap: 16px; }
-.gallery-two { grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }
+.gallery-process { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 .gallery-feature { grid-template-columns: minmax(0, 1.1fr) minmax(240px, .9fr); align-items: stretch; }
 .cad-grid { grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
 .cad-grid-feature { grid-template-columns: minmax(0, 1.1fr) minmax(240px, .9fr); align-items: stretch; }
-.cad-card { display: flex; min-width: 0; flex-direction: column; padding: 21px; border: 1px solid #ffffff1b; background: #0c1624; } .cad-part-image { display: block; width: 100%; aspect-ratio: 1.55; margin: 0 0 16px; object-fit: contain; background: #e6e9eb; }
+.cad-card { display: flex; min-width: 0; flex-direction: column; padding: 21px; border: 1px solid #ffffff1b; background: #0c1624; }
 .cad-card-feature { flex-direction: row; align-items: center; gap: 24px; padding: 25px; }
 .cad-card-mark { display: grid; width: 76px; height: 76px; flex: 0 0 76px; place-items: center; border: 1px solid #f18a3580; color: var(--orange); font-family: var(--serif); font-size: 1.3rem; }
 .cad-file-kind { color: var(--orange); font-size: .56rem; font-weight: 800; letter-spacing: .12em; }
@@ -116,8 +117,7 @@ h1 span, h2 span { color: var(--green); }
 .gallery-card { min-width: 0; margin: 0; overflow: hidden; border: 1px solid #ffffff1b; background: #0c1624; animation: rise-in .55s ease-out both; }
 .gallery-card img { display: block; width: 100%; max-height: 510px; aspect-ratio: 1.55; object-fit: contain; background: #e6e9eb; transition: transform .45s ease; }
 .gallery-card:hover img { transform: scale(1.025); }
-.gallery-photo img { aspect-ratio: 1.1; object-fit: cover; object-position: center 53%; }
-.gallery-photo-contain img { object-fit: contain; background: #e6e9eb; }
+.gallery-photo img { aspect-ratio: 4 / 5; object-fit: cover; object-position: center 65%; }
 .gallery-card figcaption { display: grid; gap: 3px; padding: 13px 15px 15px; }
 .gallery-card figcaption strong { color: var(--white); font-size: .75rem; }
 .gallery-card figcaption span { color: var(--muted); font-size: .64rem; }
@@ -167,6 +167,7 @@ h1 span, h2 span { color: var(--green); }
   .principle-band { grid-template-columns: repeat(2, 1fr); }
   .principle-title { grid-column: 1 / -1; }
   .gallery-feature { grid-template-columns: 1fr 1fr; }
+  .gallery-process { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .cad-grid-feature { grid-template-columns: 1fr; }
   .process-layout, .team-layout { gap: 38px; }
 }
@@ -194,7 +195,8 @@ h1 span, h2 span { color: var(--green); }
   .gallery-caveat { margin-top: 17px; }
   .gallery-caveat-wide { margin: -4px 0 17px; }
   .gallery-group { margin-top: 42px; }
-  .gallery-two, .gallery-feature, .split-sections { grid-template-columns: 1fr; }
+  .gallery-feature, .split-sections { grid-template-columns: 1fr; }
+  .gallery-process { grid-template-columns: 1fr; }
   .cad-grid { grid-template-columns: 1fr; }
   .cad-card-feature { align-items: flex-start; flex-direction: column; gap: 17px; }
   .gallery-card img { aspect-ratio: 1.15; }
