@@ -127,6 +127,31 @@ h1 span, h2 span { color: var(--green); }
 
 .section-accent { background: #142638; }
 .section-accent .section-heading > p:last-child { max-width: 490px; margin-top: 17px; color: #b4c0ce; }
+.dimensional-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+.dimension-stage-card { min-width: 0; padding: 25px; border: 1px solid #ffffff24; background: #0b1321a8; }
+.dimension-stage-card h3 { margin: 13px 0 0; font-family: var(--serif); font-size: 1.45rem; font-weight: 400; }
+.dimension-stage-card .lab-skill-list { gap: 8px; }
+.dimension-status, .learning-note { margin: 20px 0 0; color: #b4c0ce; font-size: .75rem; }
+.dimension-status strong { color: var(--white); }
+.table-scroll { margin-top: 30px; overflow-x: auto; border: 1px solid #ffffff24; }
+.printer-table { width: 100%; min-width: 720px; border-collapse: collapse; background: #0b1321a8; }
+.printer-table th, .printer-table td { padding: 13px 15px; border-bottom: 1px solid #ffffff24; text-align: left; vertical-align: top; font-size: .7rem; }
+.printer-table thead th { color: var(--orange); font-size: .62rem; letter-spacing: .08em; text-transform: uppercase; }
+.printer-table tbody th { color: var(--white); white-space: nowrap; }
+.printer-table td { color: #bdc7d2; }
+.printer-table a { color: var(--green); }
+.lab-section .gallery-heading { margin-bottom: 34px; }
+.lab-learning-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+.lab-learning-card { padding: clamp(22px, 3vw, 34px); border: 1px solid #ffffff24; background: #0b1321a8; }
+.lab-learning-index { color: var(--orange); font-size: .59rem; font-weight: 800; letter-spacing: .14em; }
+.lab-learning-card h3 { margin: 13px 0 9px; font-family: var(--serif); font-size: 1.65rem; font-weight: 400; }
+.lab-learning-card p { margin: 0; color: #b4c0ce; font-size: .8rem; }
+.lab-skill-list { display: grid; gap: 9px; margin: 20px 0 0; padding: 17px 0 0; border-top: 1px solid #ffffff24; list-style: none; }
+.lab-skill-list li { position: relative; padding-left: 17px; color: #d3dae2; font-size: .72rem; }
+.lab-skill-list li::before { position: absolute; top: .65em; left: 0; width: 5px; height: 5px; background: var(--green); content: ""; }
+.lab-gallery { margin-top: 34px; }
+.lab-photo-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+.lab-photo img { aspect-ratio: 4 / 3; object-fit: contain; background: #0b1321; }
 .process-layout { display: grid; grid-template-columns: .85fr 1.15fr; gap: 70px; }
 .process-list { margin: 0; padding: 0; list-style: none; border-top: 1px solid #ffffff24; }
 .process-list li { display: grid; grid-template-columns: 45px 1fr; gap: 14px; padding: 17px 0; border-bottom: 1px solid #ffffff24; }
@@ -168,8 +193,19 @@ h1 span, h2 span { color: var(--green); }
   .principle-title { grid-column: 1 / -1; }
   .gallery-feature { grid-template-columns: 1fr 1fr; }
   .gallery-process { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .dimensional-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .lab-photo-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .cad-grid-feature { grid-template-columns: 1fr; }
   .process-layout, .team-layout { gap: 38px; }
+}
+
+@media (min-width: 721px) and (max-width: 860px) {
+  .nav-wrap { position: relative; }
+  .menu-toggle { display: block; }
+  .primary-nav { position: absolute; top: 78px; right: 0; left: 0; display: none; padding: 12px 19px 18px; border-bottom: 1px solid var(--line); background: var(--navy); }
+  .primary-nav.is-open { display: grid; gap: 0; }
+  .primary-nav a { padding: 11px 2px; }
+  .primary-nav .nav-link { margin-top: 6px; text-align: center; }
 }
 
 @media (max-width: 720px) {
@@ -195,7 +231,8 @@ h1 span, h2 span { color: var(--green); }
   .gallery-caveat { margin-top: 17px; }
   .gallery-caveat-wide { margin: -4px 0 17px; }
   .gallery-group { margin-top: 42px; }
-  .gallery-feature, .split-sections { grid-template-columns: 1fr; }
+  .gallery-feature, .split-sections, .lab-learning-grid, .dimensional-grid { grid-template-columns: 1fr; }
+  .lab-photo-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .gallery-process { grid-template-columns: 1fr; }
   .cad-grid { grid-template-columns: 1fr; }
   .cad-card-feature { align-items: flex-start; flex-direction: column; gap: 17px; }
