@@ -18,3 +18,14 @@ if (menuButton && navigation) {
   });
 }
 
+const mechanismDemo = document.querySelector("#mechanism-demo");
+const mechanismToggle = document.querySelector(".mechanism-toggle");
+
+if (mechanismDemo && mechanismToggle) {
+  mechanismToggle.addEventListener("click", () => {
+    const isRunning = mechanismToggle.getAttribute("aria-pressed") !== "true";
+    mechanismToggle.setAttribute("aria-pressed", String(isRunning));
+    mechanismDemo.classList.toggle("is-running", isRunning);
+    mechanismToggle.firstChild.textContent = isRunning ? "Stop rotation " : "Rotate bucket ";
+  });
+}

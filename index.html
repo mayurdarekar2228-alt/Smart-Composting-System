@@ -23,10 +23,9 @@
       <nav id="primary-nav" class="primary-nav" aria-label="Main navigation">
         <a href="#overview">Project</a>
         <a href="#design">Design</a>
-        <a href="#dimensions">Dimensions</a>
-        <a href="#lab-learning">Lab Learning</a>
+        <a href="#mechanism">Model</a>
         <a href="#gallery">Gallery</a>
-        <a href="#garden">Garden</a>
+        <a href="#maker-lab">Maker Lab</a>
         <a href="#construction">Process</a>
         <a href="#team">Team</a>
         <a class="nav-link" href="README.md">README <span aria-hidden="true">↗</span></a>
@@ -44,19 +43,63 @@
           <p class="hero-lead">A student mechanical engineering project focused on developing a physical composting system using a 20-litre bucket and a mechanical mixing arrangement. The project demonstrates practical mechanical design, fabrication, assembly and sustainable waste-management concepts.</p>
           <div class="hero-actions">
             <a class="button button-primary" href="#overview">Explore Project <span aria-hidden="true">↓</span></a>
-            <a class="button button-secondary" href="#gallery">View Gallery &amp; CAD <span aria-hidden="true">↗</span></a>
+            <a class="button button-secondary" href="#gallery">View CAD Gallery <span aria-hidden="true">↗</span></a>
           </div>
-          <p class="hero-status"><span class="status-dot"></span> Build and model photos supplied</p>
+          <p class="hero-status"><span class="status-dot"></span> Fabrication documentation in progress</p>
         </div>
         <figure class="hero-figure">
-          <img src="assets/images/01_complete_isometric.png" alt="Supplied SolidWorks isometric render; correspondence with the physical model has not been verified." fetchpriority="high">
-          <figcaption><span>SUPPLIED SOLIDWORKS VIEW</span><span>CAD reference · match unverified</span></figcaption>
+          <img src="assets/images/final-assembly.png" alt="Final composting-system assembly render with a rotating drum, hand crank, and straight support stand." fetchpriority="high">
+          <figcaption><span>01 / FINAL ASSEMBLY</span><span>Supplied model render</span></figcaption>
         </figure>
       </div>
       <div class="hero-specs" aria-label="Project facts">
         <div><span class="spec-label">CONTAINER</span><strong>20 <small>L</small></strong><span class="spec-note">As specified in the project brief</span></div>
         <div><span class="spec-label">PROJECT SCOPE</span><strong>Mechanical</strong><span class="spec-note">Physical design and construction</span></div>
-        <div><span class="spec-label">BUILD RECORD</span><strong>Model photographed</strong><span class="spec-note">Welding and assembly photos supplied</span></div>
+        <div><span class="spec-label">BUILD STATUS</span><strong>In progress</strong><span class="spec-note">Frame work shown in supplied photos</span></div>
+      </div>
+    </section>
+
+    <section class="section mechanism-section" id="mechanism">
+      <div class="section-inner">
+        <div class="gallery-heading">
+          <div><p class="eyebrow">HOW THE MECHANISM WORKS</p><h2>Turn the handle.<br><span>Rotate the bucket.</span></h2></div>
+          <p class="gallery-caveat">Interactive schematic: turning the external handle rotates the bucket only. No internal mixing shaft or paddles are shown; the animation is illustrative, not a measured simulation.</p>
+        </div>
+        <div class="mechanism-demo" id="mechanism-demo">
+          <svg class="mechanism-drawing" viewBox="0 0 1000 390" role="img" aria-labelledby="mechanism-title mechanism-description">
+            <title id="mechanism-title">Hand-cranked rotating compost bucket</title>
+            <desc id="mechanism-description">A frame supports a bucket. Turning the external handle rotates the bucket; no internal shaft is shown.</desc>
+            <defs>
+              <linearGradient id="drum-shade" x1="0" x2="1" y1="0" y2="1">
+                <stop offset="0" stop-color="#f4f4f1"/><stop offset=".55" stop-color="#b9c0c5"/><stop offset="1" stop-color="#7d8992"/>
+              </linearGradient>
+              <radialGradient id="drum-face">
+                <stop offset="0" stop-color="#edf0ef"/><stop offset="1" stop-color="#a8b0b5"/>
+              </radialGradient>
+            </defs>
+            <g class="mechanism-frame" fill="none" stroke="#718496" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M170 333h660M260 146 170 333m90-187 90 187m390-187-90 187m90-187 90 187M260 146h480" stroke-width="12"/>
+              <path d="M218 238h564M218 238 170 333m48-95 48-92m516 92 48 95m-48-95-48-92" stroke-width="7" opacity=".8"/>
+              <path d="M170 333h660" stroke="#f18a35" stroke-width="5"/>
+            </g>
+            <g class="drum-rotor">
+              <circle cx="500" cy="180" r="128" fill="url(#drum-shade)" stroke="#dfe4e6" stroke-width="5"/>
+              <circle cx="500" cy="180" r="111" fill="url(#drum-face)" stroke="#7b8991" stroke-width="3"/>
+              <circle cx="500" cy="180" r="14" fill="#26394a" stroke="#f18a35" stroke-width="5"/>
+              <path d="M421 90a108 108 0 0 1 124-16" fill="none" stroke="#ffffff" stroke-width="5" opacity=".7"/>
+              <rect x="456" y="71" width="87" height="27" rx="8" fill="#91a0a9" stroke="#65737b" stroke-width="3"/>
+            </g>
+            <g class="crank-rotor">
+              <path d="M628 180h24" stroke="#f18a35" stroke-width="9" stroke-linecap="round"/>
+              <rect x="648" y="164" width="32" height="32" rx="12" fill="#f18a35" stroke="#ffc18e" stroke-width="3"/>
+            </g>
+            <text x="500" y="372" text-anchor="middle" fill="#a4b0bf" font-size="16" font-family="Segoe UI, Arial, sans-serif">FRAME FIXED · BUCKET &amp; EXTERNAL HANDLE ROTATE</text>
+          </svg>
+          <div class="mechanism-controls">
+            <p><strong>Try the hand crank</strong><span>Select “Rotate bucket” to watch the bucket and external handle turn.</span></p>
+            <button class="button button-primary mechanism-toggle" type="button" aria-pressed="false" aria-controls="mechanism-demo">Rotate bucket <span aria-hidden="true">↻</span></button>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -68,7 +111,7 @@
         </div>
         <div class="intro-copy">
           <p>The project explores a physical composting-system concept built around a 20-litre bucket and a mechanical mixing arrangement. Its emphasis is on mechanical design, fabrication and assembly.</p>
-          <p>Team-supplied photos show frame welding and the red-drum physical model. The SolidWorks downloads are provided separately; their correspondence with the photographed model has not been confirmed.</p>
+          <p>The supplied SolidWorks assembly and component files are now included as native CAD downloads. They document the design, but do not prove that the physical build is complete or matches the CAD; photographs show frame fabrication and bucket/shaft assembly in progress.</p>
           <a class="text-link" href="README.md">Read the complete engineering brief <span aria-hidden="true">↗</span></a>
         </div>
       </div>
@@ -81,89 +124,20 @@
       </div>
     </section>
 
-    <section class="section section-accent" id="dimensions">
-      <div class="section-inner">
-        <div class="gallery-heading">
-          <div>
-            <p class="eyebrow">03 — DIMENSIONED DESIGN &amp; BUILD</p>
-            <h2>Model first.<br><span>Fabricate. Assemble.</span></h2>
-          </div>
-          <p class="gallery-caveat">The project brief specifies a 20-litre drum capacity. The source notes do not provide verified linear dimensions; no measurements are estimated from photographs.</p>
-        </div>
-        <div class="dimensional-grid">
-          <article class="dimension-stage-card">
-            <span class="lab-learning-index">01 / 3D MODELLING</span>
-            <h3>Define the CAD</h3>
-            <ul class="lab-skill-list">
-              <li>Drum length, diameter, opening and wall thickness</li>
-              <li>Frame envelope, footprint and member sections</li>
-              <li>Shaft, bearing spacing, hub fits and crank radius</li>
-              <li>Lid opening, moving clearances and interfaces</li>
-            </ul>
-          </article>
-          <article class="dimension-stage-card">
-            <span class="lab-learning-index">02 / FABRICATION</span>
-            <h3>Release and build</h3>
-            <ul class="lab-skill-list">
-              <li>Cut lengths, section sizes and member angles</li>
-              <li>Hole, joint and bearing-support locations</li>
-              <li>Frame diagonals, squareness and alignment</li>
-              <li>Actual as-fabricated dimensions and deviations</li>
-            </ul>
-          </article>
-          <article class="dimension-stage-card">
-            <span class="lab-learning-index">03 / FINAL ASSEMBLY</span>
-            <h3>Measure and verify</h3>
-            <ul class="lab-skill-list">
-              <li>Assembled length, width, height and footprint</li>
-              <li>Drum-axis height and bearing alignment</li>
-              <li>Drum/frame, crank and access clearances</li>
-              <li>As-built comparison with approved CAD drawings</li>
-            </ul>
-          </article>
-        </div>
-        <p class="dimension-status">Linear dimensions, units, tolerances, material sections and inspection results: <strong>to be confirmed from approved drawings and the completed model.</strong> The 20 L capacity is not a physical dimension.</p>
-        <a class="cad-download" href="Documentation/Project-Dimensions.md">Open the full project dimension register <span aria-hidden="true">↗</span></a>
-      </div>
-    </section>
-
     <section class="section section-dark" id="gallery">
       <div class="section-inner">
         <div class="gallery-heading">
-          <div><p class="eyebrow">04 — PROJECT VISUALS</p><h2>Making process<br><span>&amp; CAD source files.</span></h2></div>
-          <p class="gallery-caveat">These team-supplied photos show the red-drum physical model and welding work. The supplied SolidWorks files are listed separately and are not presented as a verified match; an interactive preview can be added when the correct model export is available.</p>
-        </div>
-
-        <div class="gallery-group" id="physical-model">
-          <div class="group-heading"><span>01</span><h3>Build process and physical model</h3></div>
-          <p class="gallery-caveat gallery-caveat-wide">The photos document frame welding, a drum detail and the model on its support frame. They do not establish operating safety, composting performance or a match with the supplied CAD files.</p>
-          <div class="gallery-grid gallery-process">
-            <figure class="gallery-card gallery-photo">
-              <img src="assets/images/model-welding-process.jpeg" alt="A team member welding a metal section near the model's support frame." loading="lazy">
-              <figcaption><strong>Frame welding</strong><span>Team-supplied workshop photo</span></figcaption>
-            </figure>
-            <figure class="gallery-card gallery-photo">
-              <img src="assets/images/model-welding-detail.jpeg" alt="A team member welding the model's frame in the workshop." loading="lazy">
-              <figcaption><strong>Welding the frame</strong><span>Team-supplied workshop photo</span></figcaption>
-            </figure>
-            <figure class="gallery-card gallery-photo">
-              <img src="assets/images/physical-model-detail.jpeg" alt="Close-up of the red drum, central axle and welded access panel." loading="lazy">
-              <figcaption><strong>Drum and axle detail</strong><span>Team-supplied physical model photo</span></figcaption>
-            </figure>
-            <figure class="gallery-card gallery-photo">
-              <img src="assets/images/physical-model-assembly.jpeg" alt="The red-drum model mounted horizontally on its welded support frame." loading="lazy">
-              <figcaption><strong>Model on support frame</strong><span>Team-supplied physical model photo</span></figcaption>
-            </figure>
-          </div>
+          <div><p class="eyebrow">03 — PROJECT VISUALS</p><h2>Current CAD source<br><span>&amp; workshop evidence.</span></h2></div>
+          <p class="gallery-caveat">The cards link to native SolidWorks files, not rendered images or physical photographs. They document the CAD design but do not verify a completed build. Supplied photographs show physical fabrication and assembly in progress.</p>
         </div>
 
         <div class="gallery-group">
-          <div class="group-heading"><span>02</span><h3>Supplied CAD files — match unverified</h3></div>
+          <div class="group-heading"><span>01</span><h3>Overall Assembly</h3></div>
           <div class="gallery-grid cad-grid cad-grid-feature">
             <article class="cad-card cad-card-feature">
               <div class="cad-card-mark" aria-hidden="true">3D</div>
               <div class="cad-card-content">
-                <span class="cad-file-kind">SUPPLIED SOLIDWORKS · MATCH UNVERIFIED</span>
+                <span class="cad-file-kind">NATIVE SOLIDWORKS ASSEMBLY</span>
                 <h4>Composter_Assembly.SLDASM</h4>
                 <p>Supplied assembly containing the 20-litre drum/pail, frame and support parts, bearing and bush parts, crank/rotor components, and lid components.</p>
                 <a class="cad-download" href="assets/cad/Composter_Assembly.SLDASM" download>Download assembly <span aria-hidden="true">↓</span></a>
@@ -174,7 +148,7 @@
         </div>
 
         <div class="gallery-group">
-          <div class="group-heading"><span>03</span><h3>Bucket Design</h3></div>
+          <div class="group-heading"><span>02</span><h3>Bucket Design</h3></div>
           <div class="gallery-grid cad-grid">
             <article class="cad-card"><span class="cad-file-kind">SOLIDWORKS PART</span><h4>Drum_Pail_20L.SLDPRT</h4><p>20-litre drum/pail component from the supplied assembly.</p><a class="cad-download" href="assets/cad/Drum_Pail_20L.SLDPRT" download>Download part <span aria-hidden="true">↓</span></a></article>
             <article class="cad-card"><span class="cad-file-kind">SOLIDWORKS PART</span><h4>Pail_End_Lid.SLDPRT</h4><p>End-lid component included in the assembly.</p><a class="cad-download" href="assets/cad/Pail_End_Lid.SLDPRT" download>Download part <span aria-hidden="true">↓</span></a></article>
@@ -183,7 +157,7 @@
         </div>
 
         <div class="gallery-group">
-          <div class="group-heading"><span>04</span><h3>Crank and Rotor Components</h3></div>
+          <div class="group-heading"><span>03</span><h3>Crank and Rotor Components</h3></div>
           <div class="gallery-grid cad-grid">
             <article class="cad-card"><span class="cad-file-kind">SOLIDWORKS PART</span><h4>Rotor_Hub_Stub.SLDPRT</h4><p>Rotor-hub/stub component included in the assembly.</p><a class="cad-download" href="assets/cad/Rotor_Hub_Stub.SLDPRT" download>Download part <span aria-hidden="true">↓</span></a></article>
             <article class="cad-card"><span class="cad-file-kind">SOLIDWORKS PART</span><h4>Crank_Arm.SLDPRT</h4><p>Crank-arm component included in the assembly.</p><a class="cad-download" href="assets/cad/Crank_Arm.SLDPRT" download>Download part <span aria-hidden="true">↓</span></a></article>
@@ -192,22 +166,17 @@
         </div>
 
         <div class="gallery-group">
-          <div class="group-heading"><span>05</span><h3>Frame and Support Components</h3></div>
+          <div class="group-heading"><span>04</span><h3>Frame and Support Components</h3></div>
           <div class="gallery-grid cad-grid">
             <article class="cad-card"><span class="cad-file-kind">SOLIDWORKS PART</span><h4>Stand_A_Frame.SLDPRT</h4><p>Stand A-frame component included in the assembly.</p><a class="cad-download" href="assets/cad/Stand_A_Frame.SLDPRT" download>Download part <span aria-hidden="true">↓</span></a></article>
             <article class="cad-card"><span class="cad-file-kind">SOLIDWORKS PART</span><h4>Longitudinal_Brace.SLDPRT</h4><p>Longitudinal brace component included in the assembly.</p><a class="cad-download" href="assets/cad/Longitudinal_Brace.SLDPRT" download>Download part <span aria-hidden="true">↓</span></a></article>
-            <article class="cad-card">
-              <span class="cad-file-kind">SOLIDWORKS PART</span>
-              <h4>Bearing_Block.SLDPRT</h4>
-              <p>Bearing-block component included in the assembly.</p>
-              <a class="cad-download" href="assets/cad/Bearing_Block.SLDPRT" download>Download part <span aria-hidden="true">↓</span></a>
-            </article>
+            <article class="cad-card"><span class="cad-file-kind">SOLIDWORKS PART</span><img class="cad-part-image" src="assets/images/bearing-block-render.png" alt="Isometric CAD render of the bearing block with a central circular bore."><h4>Bearing_Block.SLDPRT</h4><p>Bearing-block component included in the assembly.</p><a class="cad-download" href="assets/cad/Bearing_Block.SLDPRT" download>Download part <span aria-hidden="true">↓</span></a></article>
             <article class="cad-card"><span class="cad-file-kind">SOLIDWORKS PART</span><h4>Plain_Bush.SLDPRT</h4><p>Plain-bush component included in the assembly.</p><a class="cad-download" href="assets/cad/Plain_Bush.SLDPRT" download>Download part <span aria-hidden="true">↓</span></a></article>
           </div>
         </div>
 
         <div class="gallery-group">
-          <div class="group-heading"><span>06</span><h3>Additional Supplied Parts</h3></div>
+          <div class="group-heading"><span>05</span><h3>Additional Supplied Parts</h3></div>
           <p class="gallery-caveat gallery-caveat-wide">The relationship of these standalone files to the supplied assembly has not been confirmed.</p>
           <div class="gallery-grid cad-grid">
             <article class="cad-card"><span class="cad-file-kind">SOLIDWORKS PART · UNCONFIRMED</span><h4>composter.SLDPRT</h4><p>Additional supplied part file; assembly relationship to be confirmed.</p><a class="cad-download" href="assets/cad/composter.SLDPRT" download>Download part <span aria-hidden="true">↓</span></a></article>
@@ -215,13 +184,137 @@
           </div>
         </div>
 
+        <div class="gallery-group" id="physical-model">
+          <div class="group-heading"><span>06</span><h3>Physical Model — Work in Progress</h3></div>
+          <p class="gallery-caveat gallery-caveat-wide">New photos show the red drum, support frame and project team. They document the physical build, but do not verify operation or performance.</p>
+          <div class="gallery-grid gallery-two">
+            <figure class="gallery-card gallery-photo gallery-photo-contain">
+              <img src="assets/images/physical-drum-frame.jpeg" alt="Red composting drum mounted on its rectangular support frame." loading="lazy">
+              <figcaption><strong>Red drum on support frame</strong><span>Team photo · physical model</span></figcaption>
+            </figure>
+            <figure class="gallery-card gallery-photo gallery-photo-contain">
+              <img src="assets/images/physical-drum-hatch.jpeg" alt="Close view of the red drum and its rectangular access hatch." loading="lazy">
+              <figcaption><strong>Drum and access hatch</strong><span>Physical model detail</span></figcaption>
+            </figure>
+            <figure class="gallery-card gallery-photo gallery-photo-contain">
+              <img src="assets/images/team-with-composter.jpeg" alt="Three project team members standing with the red composting drum prototype." loading="lazy">
+              <figcaption><strong>Team with the prototype</strong><span>Project documentation</span></figcaption>
+            </figure>
+            <figure class="gallery-card gallery-photo gallery-photo-contain">
+              <img src="assets/images/prototype-assembly.jpeg" alt="Earlier bucket prototype with an orange shaft and open access hatch." loading="lazy">
+              <figcaption><strong>Earlier bucket prototype</strong><span>Development photo</span></figcaption>
+            </figure>
+            <figure class="gallery-card gallery-photo">
+              <img src="assets/images/frame-fabrication-01.jpeg" alt="A person welding a rectangular metal frame member in a workshop." loading="lazy">
+              <figcaption><strong>Frame fabrication</strong><span>Workshop photograph · work in progress</span></figcaption>
+            </figure>
+            <figure class="gallery-card gallery-photo">
+              <img src="assets/images/frame-fabrication-02.jpeg" alt="A person welding the metal frame on a workshop floor." loading="lazy">
+              <figcaption><strong>Frame welding</strong><span>Workshop photograph · work in progress</span></figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section maker-lab-section" id="maker-lab">
+      <div class="section-inner">
+        <div class="gallery-heading">
+          <div><p class="eyebrow">INDEPENDENT MAKERSPACE LEARNING</p><h2>Digital fabrication.<br><span>Safety before settings.</span></h2></div>
+          <p class="gallery-caveat">These workshop photos document the equipment and posted guidance shared by the team. Always follow the exact machine manual, lab rules and instructor direction.</p>
+        </div>
+
+        <div class="lab-subsection">
+          <div class="group-heading"><span>01</span><h3>Bambu Lab printers and Bambu Studio</h3></div>
+          <p class="lab-copy">Use the correct printer and filament profile, inspect the sliced preview and confirm the build area before sending a job. Keep the printer in its intended operating condition and follow the lab's supervision rules.</p>
+          <div class="gallery-grid lab-image-grid">
+            <figure class="gallery-card gallery-photo"><img src="assets/images/bambu-a1-printer.jpeg" alt="Bambu Lab A1 desktop 3D printer in the workshop." loading="lazy"><figcaption><strong>Bambu Lab A1</strong><span>Workshop equipment</span></figcaption></figure>
+            <figure class="gallery-card gallery-photo"><img src="assets/images/bambu-p1s-printer.jpeg" alt="Enclosed Bambu Lab P1S 3D printer." loading="lazy"><figcaption><strong>Bambu Lab P1S</strong><span>Workshop equipment</span></figcaption></figure>
+            <figure class="gallery-card gallery-photo"><img src="assets/images/bambu-h2d-printer.jpeg" alt="Bambu Lab H2D 3D printer with filament system." loading="lazy"><figcaption><strong>Bambu Lab H2D</strong><span>Workshop equipment</span></figcaption></figure>
+            <figure class="gallery-card gallery-photo"><img src="assets/images/bambu-studio-screen.jpeg" alt="Bambu Studio device and print progress screen." loading="lazy"><figcaption><strong>Bambu Studio</strong><span>Printer-control screen photographed in the lab</span></figcaption></figure>
+          </div>
+        </div>
+
+        <div class="lab-subsection">
+          <div class="group-heading"><span>02</span><h3>CO₂ laser cutting — equipment and safe operation</h3></div>
+          <div class="gallery-grid gallery-two lab-machine-grid">
+            <figure class="gallery-card gallery-photo"><img src="assets/images/laser-cutter-sil.png" alt="SIL CO2 laser cutter in the university makerspace." loading="lazy"><figcaption><strong>CO₂ laser cutter</strong><span>Follow the model-specific operating manual</span></figcaption></figure>
+            <figure class="gallery-card gallery-photo"><img src="assets/images/laser-chiller.png" alt="Laser chiller and machine water-level indicators." loading="lazy"><figcaption><strong>Chiller and cooling checks</strong><span>Check water level and machine status before operation</span></figcaption></figure>
+            <figure class="gallery-card gallery-photo"><img src="assets/images/laser-cutter-bed.jpeg" alt="Inside the laser cutter workspace and honeycomb bed." loading="lazy"><figcaption><strong>Work area</strong><span>Keep the bed and surrounding area clear</span></figcaption></figure>
+            <figure class="gallery-card gallery-photo"><img src="assets/images/laser-safety-posters.jpeg" alt="Makerspace laser safety posters with do and don't guidance." loading="lazy"><figcaption><strong>Posted laser safety guidance</strong><span>Read and follow all lab signage</span></figcaption></figure>
+            <figure class="gallery-card gallery-photo"><img src="assets/images/laser-controller-display.jpeg" alt="SIL laser cutter controller display photographed in the workshop." loading="lazy"><figcaption><strong>Machine controller</strong><span>Use the current lab operating procedure</span></figcaption></figure>
+          </div>
+          <div class="safety-panel">
+            <h4>Before starting a laser job</h4>
+            <ul class="safety-list">
+              <li>Get the required training and supervision; assess the job and use the correct laser-rated eye protection when required.</li>
+              <li>Tie back long hair, avoid loose clothing and jewelry, and keep hands clear of moving parts.</li>
+              <li>Use only materials explicitly approved for this machine. Never cut PVC/vinyl or unidentified materials.</li>
+              <li>Check cooling-water level, extraction and air assist before use; keep the lid/enclosure closed as designed.</li>
+              <li>Stay with the machine while it runs. Stop safely and alert the supervisor if flames, unusual smoke, alarms or faults appear.</li>
+              <li>Do not bypass interlocks, leave a job unattended, or rely on a photo chart instead of the current machine manual.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="lab-subsection">
+          <div class="group-heading"><span>03</span><h3>My laser-cut projects</h3></div>
+          <p class="lab-copy">Photos of pieces I made with the laser cutter and a design-software preview. Material and process details are shown only where verified by the photos.</p>
+          <div class="gallery-grid gallery-two">
+            <figure class="gallery-card gallery-photo gallery-photo-contain">
+              <img src="assets/images/laser-cut-lightbulb.jpeg" alt="Finished lightbulb-shaped laser-cut piece with inset white line details." loading="lazy">
+              <figcaption><strong>Lightbulb design</strong><span>Laser-cut project · material not confirmed</span></figcaption>
+            </figure>
+            <figure class="gallery-card gallery-photo gallery-photo-contain">
+              <img src="assets/images/laser-cut-engraved-plaques.jpeg" alt="Decorative plaques featuring a spider motif and Devanagari lettering." loading="lazy">
+              <figcaption><strong>Decorative plaques</strong><span>Laser-cut/engraved work · material not confirmed</span></figcaption>
+            </figure>
+            <figure class="gallery-card gallery-photo gallery-photo-contain">
+              <img src="assets/images/laser-design-software.jpeg" alt="Laser design software showing a circular university-themed layout on screen." loading="lazy">
+              <figcaption><strong>Design preview</strong><span>Laser artwork prepared in software</span></figcaption>
+            </figure>
+          </div>
+        </div>
+
+        <div class="lab-subsection">
+          <div class="group-heading"><span>04</span><h3>Posted material chart — reference only</h3></div>
+          <div class="gallery-grid chart-layout">
+            <figure class="gallery-card chart-photo">
+              <img src="assets/images/laser-settings-chart.jpeg" alt="Photograph of the laser lab's posted material, speed, power and mode chart, shown upside down in the original photo." loading="lazy">
+              <figcaption><strong>Photographed lab chart</strong><span>Consult the physical chart and confirm it with the lab supervisor</span></figcaption>
+            </figure>
+            <div class="safety-panel chart-note">
+              <h4>Do not treat these as universal presets</h4>
+              <p>The posted chart lists material/thickness, speed, power and operation mode. The table below transcribes the legible MDF cutting rows only; units are not visible in the photo. These are posted lab references, not verified or universal presets.</p>
+              <div class="table-scroll">
+                <table class="laser-settings">
+                  <thead><tr><th scope="col">MDF thickness</th><th scope="col">Speed*</th><th scope="col">Power*</th><th scope="col">Mode</th></tr></thead>
+                  <tbody>
+                    <tr><td>2 mm</td><td>22–24</td><td>45–50</td><td>Cut</td></tr>
+                    <tr><td>3 mm</td><td>18–20</td><td>50–55</td><td>Cut</td></tr>
+                    <tr><td>4 mm</td><td>15–16</td><td>60–65</td><td>Cut</td></tr>
+                    <tr><td>6 mm</td><td>12–13</td><td>65–70</td><td>Cut</td></tr>
+                    <tr><td>8 mm</td><td>8–10</td><td>70–75</td><td>Cut</td></tr>
+                    <tr><td>10 mm</td><td>6–8</td><td>75–80</td><td>Cut</td></tr>
+                    <tr><td>12 mm</td><td>3–4</td><td>80–85</td><td>Cut</td></tr>
+                    <tr><td>15 mm</td><td>2</td><td>85–90</td><td>Cut</td></tr>
+                    <tr><td>18 mm</td><td>1–2</td><td>90–95</td><td>Cut</td></tr>
+                  </tbody>
+                </table>
+              </div>
+              <p class="settings-footnote">*Values as printed on the photographed chart; units and current machine calibration are not confirmed. Verify the posted chart and approved settings with the supervisor for the exact material, thickness, focus and machine condition. Other material rows are not transcribed from this photo.</p>
+              <p>Run a supervised test on approved scrap first. Do not guess missing values or use settings from a different laser, lens, material supplier or machine manual.</p>
+              <p><strong>Machine manual:</strong> not included in the supplied images. Ask the makerspace for the current manual and operating procedure.</p>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
     <section class="section section-accent" id="construction">
       <div class="section-inner process-layout">
         <div class="section-heading">
-          <p class="eyebrow">05 — MANUFACTURING &amp; ASSEMBLY</p>
+          <p class="eyebrow">04 — MANUFACTURING &amp; ASSEMBLY</p>
           <h2>Build carefully.<br><span>Verify each step.</span></h2>
           <p class="process-lead">The photographs establish that frame work was underway; they do not establish completion or test readiness.</p>
         </div>
@@ -234,20 +327,20 @@
       </div>
     </section>
 
-    <section class="section section-light" id="garden">
+    <section class="section section-light">
       <div class="section-inner split-sections">
         <article>
-          <p class="eyebrow">06 — GARDEN CONNECTION</p>
-          <h2>From organic scraps<br><span>to a garden idea.</span></h2>
-          <p>The project can help explore how suitable organic waste might be processed and, after proper maturation and checks, considered for a garden. This is a proposed educational use, not a verified composting result.</p>
+          <p class="eyebrow">05 — APPLICATIONS &amp; ADVANTAGES</p>
+          <h2>A learning platform<br><span>for mechanical design.</span></h2>
+          <p>Potential uses include engineering education, sustainable-waste demonstrations and small-scale trials. Suitability and performance have not been validated.</p>
           <ul class="check-list">
-            <li>Connects waste reduction with a practical garden-learning activity.</li>
-            <li>Creates a reason to document feedstock, process and observations.</li>
-            <li>Any finished material needs suitable checks before garden use.</li>
+            <li>Applies mechanical design and assembly concepts.</li>
+            <li>Connects fabrication evidence with design documentation.</li>
+            <li>Supports future, measured evaluation of a mixing arrangement.</li>
           </ul>
         </article>
         <article class="limit-panel">
-          <p class="eyebrow">07 — LIMITATIONS &amp; NEXT STEPS</p>
+          <p class="eyebrow">06 — LIMITATIONS &amp; NEXT STEPS</p>
           <h2>Evidence before<br><span>performance claims.</span></h2>
           <p>Final dimensions, materials, interfaces, usable capacity and operating method are to be confirmed. The CAD source files document the design only; correspondence with the physical 20-litre build is unverified.</p>
           <ul class="check-list">
@@ -262,7 +355,7 @@
     <section class="section section-dark team-section" id="team">
       <div class="section-inner team-layout">
         <div class="section-heading">
-          <p class="eyebrow">08 — PROJECT TEAM</p>
+          <p class="eyebrow">07 — PROJECT TEAM</p>
           <h2>Built through<br><span>team collaboration.</span></h2>
           <p>A student Mechanical Engineering project in sustainable waste management.</p>
         </div>
@@ -274,75 +367,6 @@
         </div>
       </div>
     </section>
-    <section class="section section-accent lab-section" id="lab-learning">
-      <div class="section-inner">
-        <div class="gallery-heading">
-          <div>
-            <p class="eyebrow">INDEPENDENT MAKERSPACE LEARNING</p>
-            <h2>Laser cutting.<br><span>FDM 3D printing.</span></h2>
-          </div>
-          <p class="gallery-caveat">This learning area is separate from the composting project. Neither laser cutting nor 3D printing was used to make the Smart Composting System.</p>
-        </div>
-        <div class="lab-learning-grid">
-          <article class="lab-learning-card">
-            <span class="lab-learning-index">01 / CO2 LASER CUTTING</span>
-            <h3>Prepare, test, inspect</h3>
-            <p>Learn the vector-design workflow, material checks, supervised test cuts and dimensional inspection. CO2 laser settings are machine- and material-specific.</p>
-            <ul class="lab-skill-list">
-              <li>Check artwork scale, units and cut/engrave assignments</li>
-              <li>Use approved materials, enclosure, exhaust and interlocks</li>
-              <li>Never cut PVC, vinyl or unidentified material; never leave a job unattended</li>
-            </ul>
-          </article>
-          <article class="lab-learning-card">
-            <span class="lab-learning-index">02 / FDM 3D PRINTING</span>
-            <h3>Bambu Studio and printer comparison</h3>
-            <p>Prepare and orient a model, select the exact machine and material profile, review the sliced toolpaths, then inspect the printed part for fit and defects.</p>
-            <ul class="lab-skill-list">
-              <li>A1 mini: compact 180 × 180 × 180 mm build volume</li>
-              <li>H2D: single/dual-nozzle volume options and optional fabrication tools</li>
-              <li>X1 and P1: compare exact model and configuration before recording specs</li>
-            </ul>
-          </article>
-        </div>
-        <div class="table-scroll" role="region" aria-label="Bambu Lab printer comparison" tabindex="0">
-          <table class="printer-table">
-            <thead><tr><th>Machine</th><th>Learning focus</th><th>Verified notes</th></tr></thead>
-            <tbody>
-              <tr><th scope="row">A1 mini</th><td>Compact FDM, calibration, orientation, slicing, and print inspection</td><td>180 × 180 × 180 mm build volume; multi-colour requires compatible AMS lite setup. <a href="https://bambulab.com/en/a1-mini/tech-specs" target="_blank" rel="noopener noreferrer">Manufacturer specs</a></td></tr>
-              <tr><th scope="row">H2D</th><td>Dual-nozzle / multi-material workflows and integrated digital fabrication options</td><td>Single nozzle: 325 × 320 × 325 mm; dual nozzle: 300 × 320 × 320 mm; total two-nozzle volume: 350 × 320 × 320 mm. Optional 455 nm diode laser is not CO2. <a href="https://bambulab.com/en/h2d/tech-specs" target="_blank" rel="noopener noreferrer">Manufacturer specs</a></td></tr>
-              <tr><th scope="row">X1 series</th><td>Enclosed CoreXY workflow, monitoring, and material/profile comparison</td><td>Compare exact X1 model and current manual before documenting volume, features, or material limits.</td></tr>
-              <tr><th scope="row">P1 series</th><td>CoreXY workflow, slicer-to-printer process, and configuration comparison</td><td>Includes open-frame and enclosed variants such as P1P and P1S; verify the exact model and accessories.</td></tr>
-            </tbody>
-          </table>
-        </div>
-        <p class="learning-note">H2D laser safety: the optional 10 W / 40 W 455 nm diode module is listed as Class 4; the complete H2D system is Class 1 only when protective systems are correctly installed and functioning. This is a different machine configuration and laser type from a CO2 cutter.</p>
-        <p class="learning-note">No 3D-printing photos were supplied. The four laser-cutting photos below are independent examples and do not document the composting model.</p>
-        <div class="gallery-group lab-gallery">
-          <div class="group-heading"><span>01</span><h3>Laser-cutting examples</h3></div>
-          <div class="gallery-grid lab-photo-grid">
-            <figure class="gallery-card lab-photo">
-              <img src="assets/images/laser-cutting-machine-design.jpeg" alt="Laser cutter control screen showing a loaded design before the cut." loading="lazy">
-              <figcaption><strong>Design loaded on the cutter</strong><span>Machine-control screen</span></figcaption>
-            </figure>
-            <figure class="gallery-card lab-photo">
-              <img src="assets/images/laser-cut-lightbulb.jpeg" alt="Finished lightbulb-shaped decorative cutout with a white inlay." loading="lazy">
-              <figcaption><strong>Lightbulb design</strong><span>Finished cut piece</span></figcaption>
-            </figure>
-            <figure class="gallery-card lab-photo">
-              <img src="assets/images/laser-cut-acrylic-signs.jpeg" alt="Clear acrylic laser-cut signs with Devanagari lettering and a spider design." loading="lazy">
-              <figcaption><strong>Acrylic lettering and cutout</strong><span>Finished laser-cut examples</span></figcaption>
-            </figure>
-            <figure class="gallery-card lab-photo">
-              <img src="assets/images/laser-cutting-design-preview.jpeg" alt="Computer screen showing a circular Sanjivani University Tinkerers' Lab design prepared for cutting." loading="lazy">
-              <figcaption><strong>Design preview</strong><span>Artwork prepared for laser cutting</span></figcaption>
-            </figure>
-          </div>
-        </div>
-        <a class="cad-download" href="Documentation/Makerspace-Learning.md">Read the full learning and safety notes <span aria-hidden="true">↗</span></a>
-      </div>
-    </section>
-
   </main>
 
   <footer class="site-footer">
@@ -351,7 +375,7 @@
       <p>Physical model · Mechanical design · Sustainable engineering</p>
       <a href="README.md">Project README ↗</a>
     </div>
-    <div class="section-inner footer-note">Photos document the physical model and welding work. Correspondence with the supplied CAD, operating safety and composting results have not been verified.</div>
+    <div class="section-inner footer-note">Native CAD files document the design, not a verified physical build. Workshop images show frame fabrication in progress; no completed build or composting result is claimed.</div>
   </footer>
 </body>
 </html>
